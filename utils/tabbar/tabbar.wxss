@@ -1,0 +1,71 @@
+.tabbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  border-top: 0.5px solid #d5d5d5;
+  display: flex;
+  font-size: 0;
+  background-color: #000;
+}
+ 
+.tabbar-item {
+  flex: 1;
+  text-align: center;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 17rpx 10rpx 17rpx;
+  color: #616365;
+}
+ 
+.tabbar-item-icon {
+  margin-bottom: 13rpx;
+}
+ 
+.tabbar-item-icon .tabbar-item-icon-img {
+  width: 44rpx;
+  height: 44rpx;
+  position: relative;
+}
+.cover-view-tabbar-item-icon-img{
+  left: 50%;
+  transform: translateX(-50%);
+}
+.tabbar-item-text {
+  font-size: 20rpx;
+  letter-spacing: 2rpx;
+  line-height: 21rpx;
+}
+ 
+.tabbar-item.active {
+  color: #762322;
+}
+ 
+.carNum {
+  position: absolute;
+  width: 44rpx;
+  height: 44rpx;
+  border-radius: 50%;
+  font-size: 16rpx;
+  text-indent: -4rpx;/*让字体看起来居中*/
+  top: 0;
+  left: 0;
+  line-height: 60rpx;
+  text-align: center;
+}
+.noStyle{
+  position: absolute;
+  z-index: 10000;
+  display: inline-block;
+  width: 17rpx;
+  background-color: #762322;
+  color: #fff;
+  border-radius:50%;
+  height: 17rpx;
+  line-height: 17rpx;
+  margin-left: 32rpx;
+  font-size: 17rpx;
+  text-align: center
+}
+

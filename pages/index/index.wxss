@@ -1,0 +1,36 @@
+/* component/component_tabBar.wxss */
+
+.tab-bar{
+  position: flex;
+  bottom:0;
+  left:0;
+  width:100%;
+  background-color: #fff;
+  border-top:1px solid #C0BFC4;
+  z-index:500;
+}
+.tab-bar .tab-item{
+  float:left;
+  width: 20%;
+  text-align: center;
+  padding-top:5px;
+}
+
+.tab-bar .tab-item .icons{
+  font-size:27px;
+  color:#808080;
+  font-weight:800;
+}
+.tab-bar .tab-item .icon-text{
+  font-size:10px;
+  display: block;
+  line-height:2.1;
+  color:#808080;
+}
+.tab-bar .active .icons{
+  color:#000;
+
+}
+.tab-bar .active .icon-text{
+  color:#09BB07;
+}

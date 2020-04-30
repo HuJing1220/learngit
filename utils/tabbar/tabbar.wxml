@@ -1,0 +1,20 @@
+
+<view class='tabbar'  wx:if="{{activeIdx!=0||!landingPage}}" style='padding-bottom:{{tabBarHeight}}rpx'>
+  <view wx:if='{{_auth < item.auth}}' class='tabbar-item {{activeIdx === index ? "active" : ""}}' wx:for='{{tabbarList}}' wx:key='{{item.pagePath}}' bindtap='handleItemTap' data-path='{{item.pagePath}}' data-idx='{{index}}'>
+    <view wx:if="{{index!==2}}">
+      <view class='tabbar-item-icon'>
+        <image class="tabbar-item-icon-img" src='{{activeIdx === index ? item.selectedIconPath : item.iconPath}}'>
+        </image>
+      </view>
+      <view class='tabbar-item-text'>{{item.text}}</view>
+    </view>
+    <view wx:else>
+      <view class='tabbar-item-icon posrelative'>
+        <view wx:if="{{cartNum}}" class="noStyle"></view>
+        <image class="tabbar-item-icon-img" src='{{activeIdx === index ? item.selectedIconPath : item.iconPath}}'>
+        </image>
+      </view>
+      <view class='tabbar-item-text'>{{item.text}}</view>
+    </view>
+  </view>
+</view>
